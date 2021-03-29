@@ -1,0 +1,166 @@
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.container {
+    width: 1084px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* header style */
+.header {
+    padding: 50px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav--left {
+    margin-right: auto;
+    margin-left: 66px;
+}
+
+.header__nav--left a + a,
+.header__nav--right a + a {
+    margin-left: 30px;
+}
+
+.inner {
+    background: linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%);
+    height: 100vh;
+    padding-top: 167px;
+    min-height: 900px;
+    z-index: 1;
+}
+
+.main__content-block {
+    position: relative;
+    max-width: 542px;
+    text-align: center;
+}
+
+.main__content-block > .main-desc {
+    max-width: 383px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.33;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 19px;
+    margin-bottom: 44px;
+}
+
+.main-desc > span {
+    color: #FFF;
+}
+
+.main__content-block::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: -85px;
+    width: 658px;
+    height: 606px;
+    left: -580px;
+    background-image: url('../img/mail-pic.png');
+    z-index: 10;
+}
+
+.main__content-block::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 537px;
+    height: 613px;
+    top: -85px;
+    right: -510px;
+    background-image: url('../img/gays-pic.png');
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.29;
+    color: #fff;
+}
+
+.btn {
+    padding: 16px 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.main-btn {
+    background: linear-gradient(90deg, #0CEBEB 0%, #20E3B2 50%, #29FFC6 100%);
+    box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
+    max-width: 238px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.desc-btn {
+    margin-top: 14px;
+}
+
+.desc-btn > span {
+    display: inline-block;
+    margin-left: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main__footer {
+    margin-top: 175px;
+}
+
+.main__footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.29;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 42px;
+}
+
+.services-box + .services-box {
+    margin-left: 60px;
+}
